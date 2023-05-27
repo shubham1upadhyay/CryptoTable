@@ -1,10 +1,6 @@
-body{
-   text-align: center;
-}
 .parent{
-    margin-top: 2%;
     padding:5%;
-    background-color: black;
+    
 }
 .container{
     max-width: 800px;
@@ -34,12 +30,11 @@ body{
 }
 .button-group{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 } 
 .button-group button{
     padding: 8px 16px;
-    background-color:black;
-    color: black;
+    margin-left:5px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
