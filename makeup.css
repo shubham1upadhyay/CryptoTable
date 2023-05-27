@@ -14,12 +14,12 @@ input, button{
 .btn{
     margin-left:10px;
 }
-@media screen and (max-width:225px) {
+@media screen and (max-width:300px) {
 
    table{
-        width:100%;
+        /* width:100%; */
         font-size: 8px;
-        /* margin-left:-20px; */
+        margin-left:-20px;
         text-align: left;
     }
     .form{
