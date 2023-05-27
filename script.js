@@ -30,13 +30,15 @@ function renderTable(data) {
   tableBody.innerHTML = '';
   data.forEach(crypto => {
     const row = document.createElement('tr');
+    const percentageChange = crypto.price_change_percentage_24h;
+    const percentageChanges = percentageChange >= 0 ? 'positive-value' : 'negative-value';
     row.innerHTML = `
     <td><img src="${crypto.image}" alt="${crypto.name}" width="30"></td>
     <td>${crypto.name}</td>  
     <td>${crypto.symbol.toUpperCase()}</td>
     <td>$${crypto.current_price}</td>
     <td>$${crypto.total_volume}</td>
-    <td>${crypto.price_change_percentage_24h}%</td>
+    <td class="${percentageChanges}">${crypto.price_change_percentage_24h}%</td>
     <td>Mkt Cap: $${crypto.market_cap}</td>
     `;
     tableBody.appendChild(row);

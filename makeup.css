@@ -1,44 +1,67 @@
-.parent{width:100%;margin-top: 2%;padding:5%;}
-.form{
-    display:flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    flex-direction: row;
+body{
+   text-align: center;
 }
-input, button{
-    height:45px;
+.parent{
+    margin-top: 2%;
+    padding:5%;
+    background-color: black;
 }
-.sort_btn{
-    width:250px;
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
-.btn{
-    margin-left:10px;
+  
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
-@media screen and (max-width:250px) {
+.search-bar input{
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}  
+.search-bar button{
+    padding: 8px 16px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button-group{
+    display: flex;
+    justify-content: space-between;
+} 
+.button-group button{
+    padding: 8px 16px;
+    background-color:black;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
-   table{
-        /* width:100%; */
-        font-size: 8px;
-        margin-left:-20px;
-        text-align: left;
-    }
-    .form{
-        flex-direction: column;
-    }
-    .form button{
-        width:90%;
-        margin-left:0px;
-        height:30px;
-        font-size:10px;
-        margin-top:10px;
-    }
-    .form input{
-        width:100%;
-        font-size:10px;
-        height:30px;
-        margin-left:0px;
-    }
+.table-container{
+    overflow-x: auto;
 }
 td{
+    padding: 8px;
     text-align: left;
+}
+  
+  @media only screen and (max-width: 600px) {
+    table{
+      font-size: 9px;
+      margin-left: -35px;
+    }
+}
+.positive-value{
+    color: green!important;
+} 
+.negative-value {
+    color: red!important;
 }
