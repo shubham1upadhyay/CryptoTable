@@ -11,11 +11,12 @@
 </head>
 <body class="bg-dark">
       <div class="parent">
-          <form class="d-flex">
-            <input class="form-control" type="text" name="search" id="searchInput" placeholder="Search By Name or Symbol">
-          <button onclick="sort('marketCap')" class="btn bg-light mx-3">Sort By Mkt Cap</button>
-          <button onclick="sort('percentageChange')" class="btn bg-light">Sort By percentage</button>
-          </form>
+          <div class="d-flex">
+          <input class="form-control" type="text" name="search" id="searchInput" placeholder="Search By Name or Symbol">
+          <button onclick="search()" class="btn btn-light mx-3" id="search">Search</button>
+          <button onclick="sortByMktCap()" class="btn bg-light mx-2">Sort By Mkt Cap</button>
+          <button onclick="sortByPercentage()" class="btn bg-light">Sort By percentage</button>
+          </div>
 
           <!-- table -->
 
