@@ -46,11 +46,22 @@ function renderTable(data) {
 }
 
 // Search Function 
+// we can use either with a search button function
 function search(){
   const searchTerm = searchInput.value.toLowerCase().trim();
   const filteredData = cryptoData.filter(crypto => crypto.name.toLowerCase().includes(searchTerm) || crypto.symbol.toLowerCase().includes(searchTerm));
   renderTable(filteredData);
 }
+
+// or this is also a search function,
+// simply write the things in search bar the table will be render
+// according to that input
+
+// searchInput.addEventListener('keypress', () => {
+//   const searchTerm = searchInput.value.toLowerCase().trim();
+//   const filteredData = cryptoData.filter(crypto => crypto.name.toLowerCase().includes(searchTerm) || crypto.symbol.toLowerCase().includes(searchTerm));
+//   renderTable(filteredData);
+// });
 
 // Sort By Mkt Cap Function
 function sortByMktCap(){
