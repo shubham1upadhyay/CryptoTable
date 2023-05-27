@@ -11,7 +11,6 @@ button{width:250px;height: 50px;}
         margin-left:-16px;
     }
 }
-
-tbody{
-    text-align: right;
+td{
+    text-align: left;
 }
